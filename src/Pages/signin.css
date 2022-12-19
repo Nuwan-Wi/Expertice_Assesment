@@ -1,0 +1,91 @@
+h2{
+    margin: 2%;
+}
+#frame{
+    display: inline-block;
+    width: 10cm;
+    text-align: center;
+}
+#p1{
+    margin: 3%;
+    font-family: sans-serif;
+
+}
+
+.p2{
+    font-size: 16px;
+}
+
+.login-btn{
+    margin: 3%;
+}
+
+.social-media-btn{
+    margin: 1%;
+    height: 30px;
+    width: 170px;
+    font-size: 14px;
+}
+
+.E-mail{
+    display: flex;
+    margin-left: 5%;
+}
+#email{
+    margin-top: 5%;
+    overflow: visible;
+    font-size: 20px;
+}
+#Email{
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-left: 14px;
+    background: transparent;
+    border: none;    
+    width: 230px;
+    font-size: 20px;
+    height: 25px;
+}
+
+.pwd{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 5%;
+}
+.line{
+    margin-left: 4%;
+    height: 10px;
+    width: 90%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+}
+#password{
+    padding-top: 0px;
+    margin-right: 0%;
+    margin-top: 0px;
+    font-size: 20px;
+}
+#Password{    
+    margin-right: 0%;
+    margin-left: 2%;
+    background: transparent;   
+    border: 0px solid;
+    font-size: 20px;
+    width: 230px;
+    height: 25px;
+}
+
+
+#login{
+    width: 8cm;
+    height: 1cm;
+    margin-top: 10%;
+}
+.Register{
+    font-weight: 1000;
+}
+
+.Register:hover {
+    transition: all 0.2s ease-in-out;
+    color: #04d532;}

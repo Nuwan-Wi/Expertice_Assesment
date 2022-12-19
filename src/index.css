@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bttn{
+border-radius: 4px;
+background: #04d532;
+padding: 10px 22px;
+color: #E6E6E6;
+outline: none;
+border: none;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+text-decoration: none;
+margin: 2%;
+}
+.bttn:hover {
+  transition: all 0.2s ease-in-out;
+  background: #039d24;
+  color: #fff;}
