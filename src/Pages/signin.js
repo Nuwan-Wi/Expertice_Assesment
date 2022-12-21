@@ -2,16 +2,13 @@ import React from 'react';
 import Container from '@mui/material/Container';
 import { Card, Divider, } from '@mui/material';
 import { blue, grey, deepPurple, yellow } from '@mui/material/colors';
-import Google from './../images/logo.png';
 import PropTypes from 'prop-types';
 import SwipeableViews from 'react-swipeable-views';
 import { useTheme } from '@mui/material/styles';
-import AppBar from '@mui/material/AppBar';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import './signin.css';
+
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -64,6 +61,7 @@ function SignIn() {
     return (
         
         <div>
+        
             <Container sx={{
             display: 'flex',
             flexDirection: 'column',
@@ -72,7 +70,9 @@ function SignIn() {
             minWidth: '100vw',
             backgroundColor: blue[50],
             }}>
+        
             <Card variant="outlined" sx={{
+                marginLeft:'50%',
                 maxWidth: '500px',
                 p: 5,
                 borderRadius: '7px',
@@ -169,6 +169,7 @@ function SignIn() {
             </Box>      
         </Card>
         </Container>
+        
         </div>
       );
 }
