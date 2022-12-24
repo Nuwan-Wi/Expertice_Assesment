@@ -18,7 +18,9 @@ function App(props) {
     <Route path='/about'><About/></Route>
     <Route path='/sign-in'><SignIn/></Route>
     </Switch>
-    </Router>   
+    <Footer/>
+    </Router> 
+
     </div>
   );
 }

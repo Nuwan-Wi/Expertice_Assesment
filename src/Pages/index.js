@@ -41,7 +41,7 @@ function Home(props) {
         
 
         
-        <h1>Login</h1>        
+        <h1>World Best Destinations</h1>        
         </div>
     );
 

@@ -11,7 +11,6 @@ function Navbar() {
       setActive("nav__menu nav__active");
     } else setActive("nav__menu");
 
-    // Icon Toggler
     if (icon === "nav__toggler") {
       setIcon("nav__toggler toggle");
     } else setIcon("nav__toggler");
@@ -28,24 +27,29 @@ function Navbar() {
           </a>
         </li>
         <li className="nav__item">
+          <a href="#" className="nav__link">
+            Destinations
+          </a>
+        </li>
+        <li className="nav__item">
+          <a href="#" className="nav__link">
+            Resorvations
+          </a>
+        </li>
+        <li className="nav__item">
+          <a href="" className="nav__link">
+            Join With us
+          </a>
+        </li>
+        <li className="nav__item">
           <a href="/about" className="nav__link">
             About
           </a>
         </li>
         <li className="nav__item">
-          <a href="#" className="nav__link">
-            Skill
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="#" className="nav__link">
-            Contact
-          </a>
-        </li>
-        <li className="nav__item">
         <a className="btn" href="/sign-in">Sign In</a>
         </li>
-      </ul>
+      </ul> 
       
       <div onClick={navToggle} className={icon}>
         <div className="line1"></div>
