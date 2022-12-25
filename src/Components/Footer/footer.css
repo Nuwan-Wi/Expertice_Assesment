@@ -11,12 +11,12 @@
     font-size: 20px;
 }
 
-label{
+.label{
     margin-top: 40px;
     font-weight: 700;
 }
 
-input{
+.input-field{
     margin: 40px 20px 0px;
     background: transparent;
     width: 25%;
@@ -27,7 +27,15 @@ input{
     outline-style:solid;
     outline-offset: 2px;
     border:0;
+    transition: all 0.2s ease-in-out;
 }
+
+.input-field:focus{
+    outline-color: #fff;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
 .butn{
     margin-top: 40px;
     background: transparent;
@@ -42,18 +50,15 @@ input{
     }
 .butn:hover {
     transition: all 0.2s ease-in-out;
-    background: #039d24;
-    color: #fff;
+    outline-color: #04d532;
+    color:#04d532;
 }
 button:hover{
     transition: all 0.2s ease-in-out;
     color: rgb(100, 100, 100);
     border-color: rgb(199, 199, 199);
 }
-a{
-    color: #fff;
-    text-decoration: none;
-}
+
 .line1{
     margin-left: 2.5%;
     margin-top: 15px;
@@ -77,6 +82,11 @@ a{
 .lst{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
+}
+
+.nav-link{
+    color: #fff;
+    text-decoration: none;
 }
 
 .social-media{

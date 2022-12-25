@@ -15,8 +15,8 @@ function Footer(){
   return (
     <div className="footer-page">
     <div className="Subscribe-part">
-      <label>Sign up for our newsletter</label>
-      <input placeholder="Email Address"/>
+      <label className="label">Sign up for our newsletter</label>
+      <input className="input-field" placeholder="Email Address"/>
       <a className="butn">SUBSCRIBE</a>
     </div>
     <div className="line1"></div>
@@ -25,16 +25,16 @@ function Footer(){
         <h4>Special Services</h4>
         <ul>
           <li className="lst">
-            <a href="#!">Ayurvedic Spa</a>
+            <a className="nav-link" href="#!">Ayurvedic Spa</a>
           </li>
           <li className="lst">
-            <a href="#!">Wildlife Tour</a>
+            <a className="nav-link" href="#!">Wildlife Tour</a>
           </li>
           <li className="lst">
-            <a href="#!">Waterfalls Journey</a>
+            <a className="nav-link" href="#!">Waterfalls Journey</a>
           </li>
           <li className="lst">
-            <a href="#!">Hills Journey</a>
+            <a className="nav-link" href="#!">Hills Journey</a>
           </li>
         </ul>
       </div>
@@ -42,16 +42,16 @@ function Footer(){
         <h4>Updates</h4>
         <ul>
           <li className="lst">
-            <a href="#!">Seasonal Special</a>
+            <a className="nav-link" href="#!">Seasonal Special</a>
           </li>
           <li className="lst">
-            <a href="#!">Packages</a>
+            <a className="nav-link" href="#!">Packages</a>
           </li>
           <li className="lst">
-            <a href="#!">Newly opend Resavations</a>
+            <a className="nav-link" href="#!">Newly opend Resavations</a>
           </li>
           <li className="lst">
-            <a href="#!">New Services</a>
+            <a className="nav-link" href="#!">New Services</a>
           </li>
         </ul>
       </div>
@@ -59,16 +59,16 @@ function Footer(){
         <h4>Company</h4>
         <ul>
           <li className="lst">
-            <a href="#!">About</a>
+            <a className="nav-link" href="#!">About</a>
           </li>
           <li className="lst">
-            <a href="#!">Carrers and Culture</a>
+            <a className="nav-link" href="#!">Carrers and Culture</a>
           </li>
           <li className="lst">
-            <a href="#!">Privacy Policy</a>
+            <a className="nav-link" href="#!">Privacy Policy</a>
           </li>
           <li className="lst">
-            <a href="#!">Be a Partner</a>
+            <a className="nav-link" href="#!">Be a Partner</a>
           </li>
         </ul>
       </div>

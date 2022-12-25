@@ -46,6 +46,7 @@ function Navbar() {
             About
           </a>
         </li>
+
         <li className="nav__item">
         <a className="btn" href="/sign-in">Sign In</a>
         </li>

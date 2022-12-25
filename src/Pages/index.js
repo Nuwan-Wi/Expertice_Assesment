@@ -8,6 +8,7 @@ import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArro
 import SwipeToSlide from '../Components/ImageSlider/imageSlider'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Footer from '../Components/Footer/footer';
 
 
 function Home(props) {
@@ -41,7 +42,8 @@ function Home(props) {
         
 
         
-        <h1>World Best Destinations</h1>        
+        <h1>World Best Destinations</h1>  
+        <Footer/>      
         </div>
     );
 

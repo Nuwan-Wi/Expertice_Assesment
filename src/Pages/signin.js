@@ -86,19 +86,6 @@ function SignIn() {
             }}>
 
             <Box sx={{ backgroundColor: blue[50], width: 500 }}>
-                {/*<AppBar position="static">
-                    <Tabs
-                    value={value}
-                    onChange={handleChange}
-                    indicatorColor="#334"
-                    textColor="inherit"
-                    variant="fullWidth"
-                    bgcolor="#000"
-                    >
-                    <Tab label="LogIn" {...a11yProps(0)} />
-                    <Tab label="Register" {...a11yProps(1)} />
-                    </Tabs>
-        </AppBar>*/}
                 <SwipeableViews
                     axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                     index={value}

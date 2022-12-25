@@ -27,6 +27,7 @@ margin: 2%;
 .bttn:hover {
   transition: all 0.2s ease-in-out;
   background: #039d24;
-  color: #fff;}
+  color: #fff;
+}
 
 

@@ -4,9 +4,6 @@ import Navbar from "./Components/Navbar/navbar";
 import Home from "./Pages/index"
 import About from './Pages/about'
 import SignIn from './Pages/signin';
-import Footer from './Components/Footer/footer';
-
-
 
 function App(props) {
   return (
@@ -18,9 +15,7 @@ function App(props) {
     <Route path='/about'><About/></Route>
     <Route path='/sign-in'><SignIn/></Route>
     </Switch>
-    <Footer/>
-    </Router> 
-
+    </Router>
     </div>
   );
 }
