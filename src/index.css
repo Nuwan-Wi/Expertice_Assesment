@@ -30,4 +30,9 @@ margin: 2%;
   color: #fff;
 }
 
-
+.imagetag{
+  height: 150px;
+  width: 200px;
+  background-size:cover; 
+  margin: 4%;
+}

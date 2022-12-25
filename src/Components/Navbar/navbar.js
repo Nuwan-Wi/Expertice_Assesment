@@ -27,7 +27,7 @@ function Navbar() {
           </a>
         </li>
         <li className="nav__item">
-          <a href="#" className="nav__link">
+          <a href="/destination" className="nav__link">
             Destinations
           </a>
         </li>

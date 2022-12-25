@@ -4,6 +4,8 @@ import Navbar from "./Components/Navbar/navbar";
 import Home from "./Pages/index"
 import About from './Pages/about'
 import SignIn from './Pages/signin';
+import Destination from './Pages/destination';
+
 
 function App(props) {
   return (
@@ -14,6 +16,7 @@ function App(props) {
     <Route path='/' exact><Home/></Route>
     <Route path='/about'><About/></Route>
     <Route path='/sign-in'><SignIn/></Route>
+    <Route path='/destination'><Destination/></Route>
     </Switch>
     </Router>
     </div>

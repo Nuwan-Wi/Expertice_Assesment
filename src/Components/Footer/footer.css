@@ -13,7 +13,7 @@
 
 .label{
     margin-top: 40px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .input-field{
@@ -87,6 +87,7 @@ button:hover{
 .nav-link{
     color: #fff;
     text-decoration: none;
+    font-weight: 300;
 }
 
 .social-media{

@@ -1,16 +1,14 @@
-import { WidthFull } from "@mui/icons-material";
-import { width } from "@mui/system";
 import React, { Component } from "react";
 import Slider from "react-slick";
-import imgS1 from '../../images/imgS1.jpg';
-import imgS2 from '../../images/imgS2.jpg';
-import imgS3 from '../../images/imgS3.jpg';
-import imgS4 from '../../images/imgS4.jpg';
-import imgS5 from '../../images/imgS5.jpg';
-import imgS6 from '../../images/imgS6.jpg';
-import imgS7 from '../../images/imgS7.jpg';
-import imgS8 from '../../images/imgS8.jpg';
-import imgS9 from '../../images/imgS9.jpg';
+import imgS1 from '../../images/image-slider/imgS1.jpg';
+import imgS2 from '../../images/image-slider/imgS2.jpg';
+import imgS3 from '../../images/image-slider/imgS3.jpg';
+import imgS4 from '../../images/image-slider/imgS4.jpg';
+import imgS5 from '../../images/image-slider/imgS5.jpg';
+import imgS6 from '../../images/image-slider/imgS6.jpg';
+import imgS7 from '../../images/image-slider/imgS7.jpg';
+import imgS8 from '../../images/image-slider/imgS8.jpg';
+import imgS9 from '../../images/image-slider/imgS9.jpg';
 import '../../index.css'
 
 export default class SwipeToSlide extends Component {
@@ -29,31 +27,31 @@ export default class SwipeToSlide extends Component {
           <div>
             <Slider {...settings} style={{hight:'450px'}}>
               <div>
-              <div className="imagetag" style={{backgroundImage: `url(${imgS1})`, height:'150px', width:'200px', backgroundSize:'cover', margin:"4%",}}></div>
+              <img className="imagetag" src={imgS1}/>
               </div>
               <div>
-              <div className="imagetag" style={{backgroundImage: `url(${imgS2})`, height:'150px', width:'200px', backgroundSize:'cover', margin:"4%",}}></div>
+              <img className="imagetag" src={imgS2}/>
               </div>
               <div>
-              <div className="imagetag" style={{backgroundImage: `url(${imgS3})`, height:'150px', width:'200px', backgroundSize:'cover', margin:"4%",}}></div>
+              <img className="imagetag" src={imgS3}/>
               </div>
               <div>
-              <div className="imagetag" style={{backgroundImage: `url(${imgS4})`, height:'150px', width:'200px', backgroundSize:'cover', margin:"4%",}}></div>
+              <img className="imagetag" src={imgS4}/>
               </div>
               <div>
-              <div className="imagetag" style={{backgroundImage: `url(${imgS5})`, height:'150px', width:'200px', backgroundSize:'cover', margin:"4%",}}></div>
+              <img className="imagetag" src={imgS5}/>
               </div>
               <div>
-              <div className="imagetag" style={{backgroundImage: `url(${imgS6})`, height:'150px', width:'200px', backgroundSize:'cover', margin:"4%",}}></div>
+              <img className="imagetag" src={imgS6}/>
               </div>
               <div>
-              <div className="imagetag" style={{backgroundImage: `url(${imgS7})`, height:'150px', width:'200px', backgroundSize:'cover', margin:"4%",}}></div>
+              <img className="imagetag" src={imgS7}/>
               </div>
               <div>
-              <div className="imagetag" style={{backgroundImage: `url(${imgS8})`, height:'150px', width:'200px', backgroundSize:'cover', margin:"4%",}}></div>
+              <img className="imagetag" src={imgS8}/>
               </div>
               <div>
-              <div className="imagetag" style={{backgroundImage: `url(${imgS9})`, height:'150px', width:'200px', backgroundSize:'cover', margin:"4%",}}></div>
+              <img className="imagetag" src={imgS9}/>
               </div>
             </Slider>
           </div>
