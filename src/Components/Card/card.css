@@ -1,24 +1,49 @@
 .destination{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
-
 .location-card{
-    max-width: 450px;
-    min-height:70vh;
+    max-width: 90%;
+    min-height:50vh;
     border-style:solid;
     border-width: 2px;
     border-color: #000;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border-radius: 10px;
     margin-bottom: 20px;
+    margin: 1%;
+}
+
+
+.location-card1{
+    max-width: 90%;
+    min-height:50vh;
+    border-style:solid;
+    border-width: 2px;
+    border-color: #000;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 2%;
+}
+.location-card2{
+    max-width: 90%;
+    min-height:50vh;
+    border-style:solid;
+    border-width: 2px;
+    border-color: #000;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 6%;
 }
 
 .images{
-    height: 40vh;
-    width: 98%;
+    height: 50vh;
+    max-width: 98%;
     border-radius: 10px 10px 0 0;
     margin: 1%;
 }
@@ -48,5 +73,27 @@ text-decoration: none;
     font-weight: 700;
 }
 
-/* ------------------------------------------------------------------ */
+.navigate{
+    font-size: 16px;
+    margin-top: 3%;
+    text-decoration: none;
+}
 
+
+/* ------------------------------------------------------------------ */
+.resturent-images{
+    display: flex;
+    min-width: 60%;
+}
+
+
+.featured-images{
+    display: flex;
+    flex-direction: column;
+}
+
+.down-images{
+    width: 94%;
+    height: 50%;
+    margin: 4% 4% 4% 2%;
+}

@@ -5,6 +5,7 @@ import Home from "./Pages/index"
 import About from './Pages/about'
 import SignIn from './Pages/signin';
 import Destination from './Pages/destination';
+import Reservations from './Pages/resorvations';
 
 
 function App(props) {
@@ -17,6 +18,7 @@ function App(props) {
     <Route path='/about'><About/></Route>
     <Route path='/sign-in'><SignIn/></Route>
     <Route path='/destination'><Destination/></Route>
+    <Route path='/reservations'><Reservations/></Route>
     </Switch>
     </Router>
     </div>
