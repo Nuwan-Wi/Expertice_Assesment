@@ -5,7 +5,7 @@ import Home from "./Pages/index"
 import About from './Pages/about'
 import SignIn from './Pages/signin';
 import Destination from './Pages/destination';
-import Reservations from './Pages/resorvations';
+import Reservations from './Pages/resorvations'
 
 
 function App(props) {

@@ -15,7 +15,7 @@ function Footer(){
   return (
     <div className="footer-page">
     <div className="Subscribe-part">
-      <label className="label">Sign up for our newsletter</label>
+      <label className="label">Sign up for our Newsletter</label>
       <input className="input-field" placeholder="Email Address"/>
       <a className="butn">SUBSCRIBE</a>
     </div>
@@ -31,10 +31,10 @@ function Footer(){
             <a className="nav-link" href="#!">Wildlife Tour</a>
           </li>
           <li className="lst">
-            <a className="nav-link" href="#!">Waterfalls Journey</a>
+            <a className="nav-link" href="#!">Waterfall Journey</a>
           </li>
           <li className="lst">
-            <a className="nav-link" href="#!">Hills Journey</a>
+            <a className="nav-link" href="#!">Hill Journey</a>
           </li>
         </ul>
       </div>
@@ -48,7 +48,7 @@ function Footer(){
             <a className="nav-link" href="#!">Packages</a>
           </li>
           <li className="lst">
-            <a className="nav-link" href="#!">Newly opend Resavations</a>
+            <a className="nav-link" href="#!">Newly opened Restaurant</a>
           </li>
           <li className="lst">
             <a className="nav-link" href="#!">New Services</a>

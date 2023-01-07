@@ -116,7 +116,7 @@ function SignIn() {
                     <div className='line'></div>
 
                     <button className='bttn' style={{width:'350px', marginTop: '20px', fontSize:'20px' }}>Login</button>
-                    <label className='p2'>Don't have an account.. <a className='Register' onClick= {()=>handleChange("index",1)}>Register</a></label>
+                    <label className='p2'>Don't have an account..? <a className='Register' onClick= {()=>handleChange("index",1)}>Register</a></label>
 
                 </div>  
                     </TabPanel>
@@ -145,7 +145,7 @@ function SignIn() {
                     <div className='line'></div>
 
                     <div className="pwd">
-                    <label id="password">Re-Enter Password :</label>
+                    <label id="password">Confirm Password :</label>
                     <input id="Password"></input>                
                     </div>
 

@@ -33,7 +33,7 @@ function Home(props) {
             <div style={{marginTop:'250px'}}></div>
             <h1>Travel Through the World</h1>
             <label>Select your best destination and best reservations.</label>
-            <a className='bttn' >Lets Begun the Journey</a>
+            <a className='bttn' >Let's Begin the Journey</a>
             <div className='imageSlider' style={{width:'650px',marginTop:'50px'}}>
             <SwipeToSlide/>
             </div>                      
@@ -41,8 +41,12 @@ function Home(props) {
         </div>
         
 
+        <div className='index-body'>
+        <h1>Destinations we are providing our services</h1>
+        <h3>Trending Tours</h3>
         
-        <h1>World Best Destinations</h1>  
+
+        </div>  
         <Footer/>      
         </div>
     );

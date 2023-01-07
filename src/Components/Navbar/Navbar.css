@@ -15,10 +15,25 @@ body {
 li {
   list-style: none;
 }
+
+.sitedetails{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo{
+  height: 5vh;
+  margin: 2vh 2vh 1vh;
+}
+
 .nav__link {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
+
+
 .nav__link:hover{
   color: #04d532;
 }
@@ -27,8 +42,8 @@ li {
 .nav {
   display: flex;
   align-items: center;
-  justify-content:end;
   height: 7vh;
+  justify-content: space-between;
 
 }
 .nav__brand {
@@ -39,7 +54,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 3rem;
+  gap: 2rem;
   color: #04d532;
 }
 .nav__toggler {
@@ -68,6 +83,7 @@ li {
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
+    color: black;
     
   }
 }
@@ -93,7 +109,15 @@ li {
 /* Active Class */
 .nav__active {
   transform: translateX(0%);
+  padding: 0.5rem;
+  border-bottom: 2px solid #04d532;
+  border-bottom-left-radius: 7px ;
+  color: #000;
   
+}
+
+.navdown__active{
+  transform: translateX(0%);
 }
 
 

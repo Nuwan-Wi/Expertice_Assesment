@@ -36,3 +36,8 @@ margin: 2%;
   background-size:cover; 
   margin: 4%;
 }
+
+.index-body{
+  height: 100vh;
+  padding: 20px;
+}

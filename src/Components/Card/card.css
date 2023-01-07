@@ -1,27 +1,36 @@
+.page-header{
+    min-height: 50vh;
+}
+
+
 .destination{
     display: flex;
     flex-wrap: wrap;
 }
-.location-card{
-    max-width: 90%;
+.resorvation-card1{
+    max-width: 45%;
     min-height:50vh;
-    border-style:solid;
-    border-width: 2px;
-    border-color: #000;
     display: flex;
-    flex-direction: row;
-    border-radius: 10px;
+    flex-direction: column;
     margin-bottom: 20px;
     margin: 1%;
 }
 
+.resorvation-card2{
+    max-width: 45%;
+    min-height:50vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin: 1%;
+    margin-top: 10%;
+}
 
 .location-card1{
     max-width: 90%;
     min-height:50vh;
-    border-style:solid;
-    border-width: 2px;
-    border-color: #000;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
     display: flex;
     flex-direction: row;
     border-radius: 10px;
@@ -31,9 +40,8 @@
 .location-card2{
     max-width: 90%;
     min-height:50vh;
-    border-style:solid;
-    border-width: 2px;
-    border-color: #000;
+    border-left: 4px solid;
+    border-bottom: 4px solid;
     display: flex;
     flex-direction: row;
     border-radius: 10px;
@@ -44,7 +52,7 @@
 .images{
     height: 50vh;
     max-width: 98%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px ;
     margin: 1%;
 }
  .card-line{
@@ -74,11 +82,21 @@ text-decoration: none;
 }
 
 .navigate{
-    font-size: 16px;
-    margin-top: 3%;
+    font-size: 14px;
     text-decoration: none;
+    text-align: center;
 }
 
+.navigate-icon{
+    margin-bottom: -2px;
+}
+
+.booking-btn{
+    display: flex;
+    margin-top: 70px;
+    justify-content: flex-end;
+    
+}
 
 /* ------------------------------------------------------------------ */
 .resturent-images{
@@ -96,4 +114,10 @@ text-decoration: none;
     width: 94%;
     height: 50%;
     margin: 4% 4% 4% 2%;
+}
+
+.res-services{
+    margin-left: 40px;
+    float: left;
+
 }

@@ -2,13 +2,28 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import {Button as Btn} from "@mui/material";
 import { blue, grey, deepPurple } from '@mui/material/colors';
+import logo from '../../images/logo.png';
+
+
+function CustomLink({ href, children, ...props }) {
+  const path = window.location.pathname;
+
+  return (
+    <li className={path === href ? "nav__active" : "nav__menu"}>
+      <a href={href} {...props} className="nav__link">
+        {children}
+      </a>
+    </li>
+  )
+}
 
 function Navbar() {
   const [active, setActive] = useState("nav__menu");
   const [icon, setIcon] = useState("nav__toggler");
+
   const navToggle = () => {
     if (active === "nav__menu") {
-      setActive("nav__menu nav__active");
+      setActive("nav__menu navdown__active");
     } else setActive("nav__menu");
 
     if (icon === "nav__toggler") {
@@ -20,32 +35,17 @@ function Navbar() {
   return (
     
     <nav className="nav" style={{backgroundColor: deepPurple[50]}}>
-      <ul className={active}>
-        <li className="nav__item">
-          <a href="/" className="nav__link">
-            Home
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="/destination" className="nav__link">
-            Destinations
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="/reservations" className="nav__link">
-            Resorvations
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="" className="nav__link">
-            Join With us
-          </a>
-        </li>
-        <li className="nav__item">
-          <a href="/about" className="nav__link">
-            About
-          </a>
-        </li>
+      <div className="sitedetails">
+        <img className="logo" src={logo}/>
+        <h4>Travel World</h4>
+      </div> 
+      
+      <ul className={active} >
+      <CustomLink href="/" >Home</CustomLink>
+      <CustomLink href="/destination" >Destinations</CustomLink>
+      <CustomLink href="/reservations" >Reservation</CustomLink>
+      <CustomLink href="#" >Join With Us</CustomLink>
+      <CustomLink href="/about">About</CustomLink>
 
         <li className="nav__item">
         <a className="btn" href="/sign-in">Sign In</a>
@@ -64,5 +64,7 @@ function Navbar() {
     </nav>
   );
 };
+
+
 
 export default Navbar;
