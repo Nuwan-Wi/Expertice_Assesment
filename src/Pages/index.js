@@ -52,9 +52,9 @@ function Home(props) {
 
         <div style={{display:"flex", flexDirection:'row', justifyContent:'space-between' }}>
         <div className='main_page_card'>
-        <img src={hotel1im1} style={{width:'300px', height:'250px'}}/>
+        <img src={hotel1im1} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
         <h3>Hotel Kandalama</h3>
-        <div style={{display:'flex', justifyContent:'space-between'}}>
+        <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
         <div>
         <p>Featured</p>
         <StarRatingComponent
@@ -72,9 +72,9 @@ function Home(props) {
         </div>
         
         <div className='main_page_card'>
-        <img src={hotel1im1} style={{width:'300px', height:'250px'}}/>
+        <img src={hotel1im1} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
         <h3>Hotel Kandalama</h3>
-        <div style={{display:'flex', justifyContent:'space-between'}}>
+        <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
         <div>
         <p>Featured</p>
         <StarRatingComponent
@@ -92,9 +92,9 @@ function Home(props) {
         </div>
         
         <div className='main_page_card'>
-        <img src={hotel1im1} style={{width:'300px', height:'250px'}}/>
+        <img src={hotel1im1} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
         <h3>Hotel Kandalama</h3>
-        <div style={{display:'flex', justifyContent:'space-between'}}>
+        <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
         <div>
         <p>Featured</p>
         <StarRatingComponent
@@ -112,9 +112,9 @@ function Home(props) {
         </div>
 
         <div className='main_page_card'>
-        <img src={hotel1im1} style={{width:'300px', height:'250px'}}/>
+        <img src={hotel1im1} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
         <h3>Hotel Kandalama</h3>
-        <div style={{display:'flex', justifyContent:'space-between'}}>
+        <div style={{display:'flex', justifyContent:'space-between',padding:'5px'}}>
         <div>
         <p>Featured</p>
         <StarRatingComponent
@@ -142,9 +142,9 @@ function Home(props) {
 
         <div style={{display:"flex", flexDirection:'row', justifyContent:'space-between' }}>
         <div className='main_page_card'>
-        <img src={Sigiriya} style={{width:'300px', height:'250px'}}/>
+        <img src={Sigiriya} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
         <h3>Sigiriya, Dambulla</h3>
-        <div style={{display:'flex', justifyContent:'space-between'}}>
+        <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
         <div>
         <p>Featured</p>
         <p style={{fontSize:"14px"}}>Rock climbing, Nature</p>
@@ -158,9 +158,9 @@ function Home(props) {
         </div>
         
         <div className='main_page_card'>
-        <img src={Sigiriya} style={{width:'300px', height:'250px'}}/>
+        <img src={Sigiriya} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
         <h3>Sigiriya, Dambulla</h3>
-        <div style={{display:'flex', justifyContent:'space-between'}}>
+        <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
         <div>
         <p>Featured</p>
         <p style={{fontSize:"14px"}}>Rock climbing, Nature</p>
@@ -174,9 +174,9 @@ function Home(props) {
         </div>
 
         <div className='main_page_card'>
-        <img src={Sigiriya} style={{width:'300px', height:'250px'}}/>
+        <img src={Sigiriya} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
         <h3>Sigiriya, Dambulla</h3>
-        <div style={{display:'flex', justifyContent:'space-between'}}>
+        <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
         <div>
         <p>Featured</p>
         <p style={{fontSize:"14px"}}>Rock climbing, Nature</p>
@@ -190,9 +190,9 @@ function Home(props) {
         </div>
 
         <div className='main_page_card'>
-        <img src={Sigiriya} style={{width:'300px', height:'250px'}}/>
+        <img src={Sigiriya} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
         <h3>Sigiriya, Dambulla</h3>
-        <div style={{display:'flex', justifyContent:'space-between'}}>
+        <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
         <div>
         <p>Featured</p>
         <p style={{fontSize:"14px"}}>Rock climbing, Nature</p>
@@ -208,6 +208,8 @@ function Home(props) {
         </div> 
 
         </div>
+
+        <div className='index-body'></div>
 
         <Footer/>      
         </div>
