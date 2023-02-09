@@ -34,7 +34,7 @@ function Home(props) {
             minWidth: '90vw',
 
             }}>
-            <div style={{marginTop:'250px'}}></div>
+            <div style={{marginTop:'30vh'}}></div>
             <h1>Travel Through the World</h1>
             <label>Select your best destination and best reservations.</label>
             <a className='bttn' >Let's Begin the Journey</a>
@@ -213,12 +213,14 @@ function Home(props) {
         backgroundAttachment: 'fixed',
         backgroundSize:'100% 100%'}}>
 
-        <div style={{marginLeft:'70%',width:'30%',}}>
+        <div style={{float:'right',width:'400px',}}>
         <h1>Do you want to join with Us</h1>
         <p style={{marginTop:"10vh"}}>Join with the TravelWorld and be a part of our group. Be a world known aunterprenuor and besiness person.</p>
         <p>Change the look of the your business. Get the primium benifits from the</p>
         <p style={{fontSize:'24px', fontWeight:'bold'}}>TravelWorld.</p>
-        
+        <div className='join_button'>
+        <a>JOIN</a>
+        </div>
         </div>
 
         </div>

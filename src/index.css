@@ -14,10 +14,8 @@ code {
 
 .bttn{
 border-radius: 4px;
-background: #04d532;
+outline-style:solid;
 padding: 10px 22px;
-color: #E6E6E6;
-outline: none;
 border: none;
 cursor: pointer;
 transition: all 0.2s ease-in-out;
@@ -26,8 +24,25 @@ margin: 2%;
 }
 .bttn:hover {
   transition: all 0.2s ease-in-out;
-  background: #039d24;
-  color: #fff;
+  color: rgb(40, 255, 32);
+}
+
+.join_button{
+    background: transparent;
+    cursor: pointer;
+    outline-style:solid;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 150px;
+    padding: 10px;
+    margin-top: 40px;
+    float: right;
+    transition: all 0.2s ease-in-out;
+}
+
+.join_button:hover{
+  transition: all 0.2s ease-in-out;
+  color: rgb(40, 255, 32);
 }
 
 .imagetag{
