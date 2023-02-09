@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '@mui/material/Container';
 import '../index.css';
 import { blue, grey, deepPurple, yellow } from '@mui/material/colors';
-import bground from '../images/back-main-page.jpg';
+import bground from '../images/back-main-page.png';
 import { color, margin } from '@mui/system';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import SwipeToSlide from '../Components/ImageSlider/imageSlider'
@@ -20,9 +20,9 @@ function Home(props) {
         <div>
         <div style={{ 
             backgroundImage: `url(${bground})`,
-            width: '100%', 
-            height:'93vh',
-            backgroundSize:'cover'
+            backgroundAttachment: 'fixed',
+            backgroundSize:'100% 100%',
+            width: '100%',
          }}>
 
         <Container sx={{
@@ -135,7 +135,7 @@ function Home(props) {
 
         </div>
         
-        <div className='index-body'>
+        <div className='index-body' >
         <h1>OUR FEATURED TOURS</h1>
         <p>looking for place to visit.</p>
         <p>There are plenty of destinations</p>
@@ -209,7 +209,19 @@ function Home(props) {
 
         </div>
 
-        <div className='index-body'></div>
+        <div className='index-body' style={{background: `url(${bground})`,
+        backgroundAttachment: 'fixed',
+        backgroundSize:'100% 100%'}}>
+
+        <div style={{marginLeft:'70%',width:'30%',}}>
+        <h1>Do you want to join with Us</h1>
+        <p style={{marginTop:"10vh"}}>Join with the TravelWorld and be a part of our group. Be a world known aunterprenuor and besiness person.</p>
+        <p>Change the look of the your business. Get the primium benifits from the</p>
+        <p style={{fontSize:'24px', fontWeight:'bold'}}>TravelWorld.</p>
+        
+        </div>
+
+        </div>
 
         <Footer/>      
         </div>
