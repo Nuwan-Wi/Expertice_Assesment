@@ -34,7 +34,7 @@ function Navbar() {
 
   return (
     
-    <nav className="nav" style={{backgroundColor: deepPurple[50]}}>
+    <nav className="nav" style={{backgroundColor: 'rgb(216, 245, 255)'}}>
       <div className="sitedetails">
         <img className="logo" src={logo}/>
         <h4>Travel World</h4>
