@@ -24,6 +24,14 @@ h2{
     font-size: 14px;
 }
 
+.Main_bttn{
+    width: 350px;
+    margin-top: 20px; 
+    font-size:20px;
+    outline-width:1.5px;
+    padding: 7px;
+}
+
 .login-btn{
     margin: 3%;
 }

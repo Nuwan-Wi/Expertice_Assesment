@@ -115,7 +115,7 @@ function SignIn() {
 
                     <div className='line'></div>
 
-                    <button className='bttn' style={{width:'350px', marginTop: '20px', fontSize:'20px' }}>Login</button>
+                    <button className='Main_bttn'>Login</button>
                     <label className='p2'>Don't have an account..? <a className='Register' onClick= {()=>handleChange("index",1)}>Register</a></label>
 
                 </div>  
@@ -151,7 +151,7 @@ function SignIn() {
 
                     <div className='line'></div>
 
-                    <button className='bttn' style={{width:'350px', marginTop: '20px', fontSize:'20px' }}>Register</button>
+                    <button className='Main_bttn'>Register</button>
                     <label className='p2'>Already have an account.. <a className='Register' onClick= {()=>handleChange("index",0)}>SignUp</a></label>
 
                 </div>  
