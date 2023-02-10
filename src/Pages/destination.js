@@ -28,7 +28,16 @@ function ReadMore({children, maxCharacterCount = 500}){
 function Destination(props) { 
     return (
         <div>
+        <div className='page-header'>
+        
+        <div class="Search_class" >
+            <input className='Search_bar' placeholder="Search Here.."/>
+            <a className='Search_bttn' onClick="#">Search</a>
+        </div>
+
         <h1>World Best Destination</h1>
+        </div>
+        
         <section className='destination'>
             <div className='location-card1'>
                 <img className='images' src={Sigiriya}/>

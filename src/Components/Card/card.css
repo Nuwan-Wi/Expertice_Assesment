@@ -1,5 +1,32 @@
 .page-header{
     min-height: 50vh;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+}
+
+.Search_class{
+    margin-left: 60vw;
+}
+
+.Search_bar{
+    width: 400px;
+    height: 35px;
+    background: transparent;
+    border-radius: 15px;
+    padding: 10px;
+    outline-style: solid;
+    outline-width: 1px;
+    margin: 20px;
+    cursor: pointer;
+    outline-style: solid;
+}
+
+.Search_bttn{
+    margin-left: -90px;
+    cursor: pointer;
+    background-color: #fff;
+    padding-right: 5px;
 }
 
 

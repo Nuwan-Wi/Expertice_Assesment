@@ -9,6 +9,7 @@ import { CgWebsite } from "react-icons/cg";
 import { MdWifi } from "react-icons/md";
 import { MdPool } from "react-icons/md";
 import { FaSnowflake } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 import { FaCoffee } from "react-icons/fa";
 import { FaSpa } from "react-icons/fa";
 import { MdLocalBar } from "react-icons/md";
@@ -41,11 +42,15 @@ function Reservations(props) {
     return (
         <div>
         <div className='page-header'>
-        <h1>Destinations we are providing our services</h1>
-        <label>Search trough Our database <br/> for reservstions.</label>
-        <div class="search_button" >
-            <label>Modle</label>
+
+        <div class="Search_class" >
+            <input className='Search_bar' placeholder="Search Here.."/>
+            <a className='Search_bttn' onClick="#">Search</a>
         </div>
+
+        <h1>Destinations we are providing our services</h1>
+        <label>Search trough Our database <br/> for reservstions.</label><br/>    
+        
         </div>
 
 
@@ -67,6 +72,7 @@ function Reservations(props) {
                 <div className='discriptions'>
                 <ReadMore>Located in Kandalama, Lake Lodge Boutique Hotel Kandalama is in the business district and near river. Ancient City of Sigiriya and Nalanda Gedige are local landmarks, and the area's natural beauty can be seen at Popham's Arboretum and Dambulla Cave Temple. Take an opportunity to explore the area for outdoor excitement like mountain biking.
                 </ReadMore>
+                outline-style: solid;
                 </div>
                 <a className='navigate' href='https://www.expedia.com/Kandalama-Hotels-Lake-Lodge-Boutique-Hotel-Kandalama.h15145269.Hotel-Information?chkin=2023-01-09&chkout=2023-01-10&destType=MARKET&destination=Kandalama%2C%20Central%20Province%2C%20Sri%20Lanka&pwaDialog=map&pwa_ts=1671999705289&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jb20vSG90ZWwtU2VhcmNo&regionId=3000423180&rfrr=HSR&rm1=a2&selectedRatePlan=207602463&selectedRoomType=201514856&semcid=US.UB.BING.DT-c-EN.HOTEL&semdtl=a1414798781.b11327111921299901.g1kwd-82945233146585%3Aaud-815274841.l1.e1c.m17f940325b64515ccc078608d0681eff7.r191537259bbda83c714c26a7da346f2ddfff8a06dcb696642605b703949d0c247.c1.j1142096.k1142096.d182944747498736.h1p.i1.n1.o1.p1.q1.s1.t1.x1.f1.u1.v1.w1&sort=RECOMMENDED&top_cur=USD&top_dp=249&useRewards=false&userIntent=&x_pwa=1'><MdLocationPin className='navigate-icon'/> Location</a><br/>
                 <a className='navigate' href='https://www.sigiriyafortress.com/'><CgWebsite className='navigate-icon'/> Website</a><br/><br/>    
