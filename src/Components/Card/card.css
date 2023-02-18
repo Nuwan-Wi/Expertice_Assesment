@@ -1,10 +1,14 @@
 .page-header{
-    min-height: 50vh;
+    min-height: 30vh;
     width: fit-content;
     text-align: center;
     margin: auto;
 }
 
+.page-body{
+    margin-bottom: 15vh;
+
+}
 .Search_class{
     margin-left: 60vw;
 }
@@ -34,13 +38,13 @@
     display: flex;
     flex-wrap: wrap;
 }
-.resorvation-card1{
-    max-width: 45%;
-    min-height:50vh;
+.resorvation-card{
+    width: 90%;
+    height:50vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-bottom: 20px;
-    margin: 1%;
+    margin: auto;
 }
 
 .resorvation-card2{
@@ -51,6 +55,18 @@
     margin-bottom: 20px;
     margin: 1%;
     margin-top: 10%;
+}
+
+.Row_1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.Row_2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
 }
 
 .location-card1{
@@ -111,7 +127,6 @@ text-decoration: none;
 .navigate{
     font-size: 14px;
     text-decoration: none;
-    text-align: center;
 }
 
 .navigate-icon{
@@ -120,7 +135,7 @@ text-decoration: none;
 
 .booking-btn{
     display: flex;
-    margin-top: 70px;
+    margin-top: 20px;
     justify-content: flex-end;
     
 }
