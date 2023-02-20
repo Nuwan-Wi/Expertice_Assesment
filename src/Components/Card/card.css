@@ -69,27 +69,13 @@
     padding: 2rem;
 }
 
-.location-card1{
+.location-card{
     max-width: 90%;
     min-height:50vh;
-    border-bottom: 4px solid;
-    border-right: 4px solid;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border-radius: 10px;
-    margin-bottom: 20px;
     margin-left: 2%;
-}
-.location-card2{
-    max-width: 90%;
-    min-height:50vh;
-    border-left: 4px solid;
-    border-bottom: 4px solid;
-    display: flex;
-    flex-direction: row;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    margin-left: 6%;
 }
 
 .images{
