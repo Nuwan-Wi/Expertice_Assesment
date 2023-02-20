@@ -13,11 +13,18 @@ import hotel1im1 from "../images/Resorvations/Hotel_01_3.jpg";
 import Sigiriya from "../images/sigiriya.jpg";
 import StarRatingComponent from 'react-star-rating-component';
 import { MdLocationPin } from "react-icons/md";
+import { motion } from "framer-motion";
+import { fadeIn, slideIn, staggerContainer } from "../Components/Motion/motion"
 
 
 function Home(props) {
     return (
-        <div>
+        <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        >
         <div style={{ 
             backgroundImage: `url(${bground})`,
             backgroundAttachment: 'fixed',
@@ -32,15 +39,17 @@ function Home(props) {
             alignItems: 'flex-end',
             minHeight: '90vh',
             minWidth: '90vw',
-
             }}>
             <div style={{marginTop:'30vh'}}></div>
+            <motion.div variants={fadeIn("down", "tween", 0.5, 1.5)}>
             <h1>Travel Through the World</h1>
             <label>Select your best destination and best reservations.</label>
-            <a className='bttn' >Let's Begin the Journey</a>
-            <div className='imageSlider' style={{width:'650px',marginTop:'50px'}}>
+            </motion.div>
+            <motion.a className='bttn' variants={fadeIn("left", "tween", 0.5, 1.5)} >Let's Begin the Journey</motion.a>
+            <motion.div className='imageSlider' style={{width:'650px',marginTop:'50px'}} variants={fadeIn("up", "tween", 0.5, 1.3)}>
             <SwipeToSlide/>
-            </div>                      
+            </motion.div>
+                                  
         </Container>          
         </div>
         
@@ -50,71 +59,14 @@ function Home(props) {
         <p>looking for place to stay at the night.</p>
         <p> Here is the solution</p>
 
+        
         <div style={{display:"flex", flexDirection:'row', justifyContent:'space-between' }}>
-        <div className='main_page_card'>
-        <img src={hotel1im1} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
-        <h3>Hotel Kandalama</h3>
-        <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
-        <div>
-        <p>Featured</p>
-        <StarRatingComponent
-        name="rate1"
-        starCount={5}
-        value={4}
-        />
-        </div>
-        <div style={{width:'2px',backgroundColor:'#039d24',marginRight:'-120px'}}/>
-        <div>
-        <h2 style={{color:"#039d24",marginTop:'-1px'}}>3500Rs</h2>
-        <p style={{fontSize:'12px',}}>Cost per day</p>
-        </div>
-        </div>
-        </div>
-        
-        <div className='main_page_card'>
-        <img src={hotel1im1} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
-        <h3>Hotel Kandalama</h3>
-        <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
-        <div>
-        <p>Featured</p>
-        <StarRatingComponent
-        name="rate1"
-        starCount={5}
-        value={4}
-        />
-        </div>
-        <div style={{width:'2px',backgroundColor:'#039d24',marginRight:'-120px'}}/>
-        <div>
-        <h2 style={{color:"#039d24",marginTop:'-1px'}}>3500Rs</h2>
-        <p style={{fontSize:'12px',}}>Cost per day</p>
-        </div>
-        </div>
-        </div>
-        
-        <div className='main_page_card'>
-        <img src={hotel1im1} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
-        <h3>Hotel Kandalama</h3>
-        <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
-        <div>
-        <p>Featured</p>
-        <StarRatingComponent
-        name="rate1"
-        starCount={5}
-        value={4}
-        />
-        </div>
-        <div style={{width:'2px',backgroundColor:'#039d24',marginRight:'-120px'}}/>
-        <div>
-        <h2 style={{color:"#039d24",marginTop:'-1px'}}>3500Rs</h2>
-        <p style={{fontSize:'12px',}}>Cost per day</p>
-        </div>
-        </div>
-        </div>
 
+        <motion.div className="box"  whileHover={{ scale: [null, 1.1, 1.1] }}  transition={{ duration: 0.3 }}>
         <div className='main_page_card'>
         <img src={hotel1im1} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
         <h3>Hotel Kandalama</h3>
-        <div style={{display:'flex', justifyContent:'space-between',padding:'5px'}}>
+        <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
         <div>
         <p>Featured</p>
         <StarRatingComponent
@@ -130,6 +82,74 @@ function Home(props) {
         </div>
         </div>
         </div>
+        </motion.div>
+        
+        
+        <motion.div className="box"  whileHover={{ scale: [null, 1.1, 1.1] }}  transition={{ duration: 0.3 }}>
+        <div className='main_page_card'>
+        <img src={hotel1im1} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
+        <h3>Hotel Kandalama</h3>
+        <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
+        <div>
+        <p>Featured</p>
+        <StarRatingComponent
+        name="rate1"
+        starCount={5}
+        value={4}
+        />
+        </div>
+        <div style={{width:'2px',backgroundColor:'#039d24',marginRight:'-120px'}}/>
+        <div>
+        <h2 style={{color:"#039d24",marginTop:'-1px'}}>3500Rs</h2>
+        <p style={{fontSize:'12px',}}>Cost per day</p>
+        </div>
+        </div>
+        </div>
+        </motion.div>
+        
+        <motion.div className="box"  whileHover={{ scale: [null, 1.1, 1.1] }}  transition={{ duration: 0.3 }}>
+        <div className='main_page_card'>
+        <img src={hotel1im1} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
+        <h3>Hotel Kandalama</h3>
+        <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
+        <div>
+        <p>Featured</p>
+        <StarRatingComponent
+        name="rate1"
+        starCount={5}
+        value={4}
+        />
+        </div>
+        <div style={{width:'2px',backgroundColor:'#039d24',marginRight:'-120px'}}/>
+        <div>
+        <h2 style={{color:"#039d24",marginTop:'-1px'}}>3500Rs</h2>
+        <p style={{fontSize:'12px',}}>Cost per day</p>
+        </div>
+        </div>
+        </div>
+        </motion.div>
+
+        <motion.div className="box"  whileHover={{ scale: [null, 1.1, 1.1] }}  transition={{ duration: 0.3 }}>
+        <div className='main_page_card'>
+        <img src={hotel1im1} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
+        <h3>Hotel Kandalama</h3>
+        <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
+        <div>
+        <p>Featured</p>
+        <StarRatingComponent
+        name="rate1"
+        starCount={5}
+        value={4}
+        />
+        </div>
+        <div style={{width:'2px',backgroundColor:'#039d24',marginRight:'-120px'}}/>
+        <div>
+        <h2 style={{color:"#039d24",marginTop:'-1px'}}>3500Rs</h2>
+        <p style={{fontSize:'12px',}}>Cost per day</p>
+        </div>
+        </div>
+        </div>
+        </motion.div>
         
         </div> 
 
@@ -226,7 +246,7 @@ function Home(props) {
         </div>
 
         <Footer/>      
-        </div>
+        </motion.div>
     );
 
 }
