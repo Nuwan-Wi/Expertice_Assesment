@@ -39,22 +39,11 @@
     flex-wrap: wrap;
 }
 .resorvation-card{
-    width: 90%;
-    height:50vh;
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
     margin: auto;
-}
-
-.resorvation-card2{
-    max-width: 45%;
-    min-height:50vh;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    margin: 1%;
-    margin-top: 10%;
+    width: 90vw;
 }
 
 .Row_1{
@@ -129,7 +118,6 @@ text-decoration: none;
 /* ------------------------------------------------------------------ */
 .resturent-images{
     display: flex;
-    min-width: 60%;
 }
 
 
