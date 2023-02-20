@@ -13,6 +13,8 @@ import { FaSearch } from "react-icons/fa";
 import { FaCoffee } from "react-icons/fa";
 import { FaSpa } from "react-icons/fa";
 import { MdLocalBar } from "react-icons/md";
+import { motion } from "framer-motion";
+import { fadeIn, slideIn, staggerContainer } from "../Components/Motion/motion"
 
 
 function ReadMore({children, maxCharacterCount = 200}){
@@ -35,12 +37,14 @@ function ReadMore({children, maxCharacterCount = 200}){
 }
 
 
-
-
-
 function Reservations(props) { 
     return (
-        <div>
+        <motion.div 
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        >
         <div className='page-header'>
 
         <div class="Search_class" >
@@ -56,7 +60,7 @@ function Reservations(props) {
 
         <h3>Feacherd Hotels and Resturents</h3>
 
-        <section className='page-body'>
+        <motion.section className='page-body' variants={fadeIn("up", "tween", 0.4, 1)}>
             <div className='resorvation-card'>
                 <div className='Row_1'>
                 <div className='resturent-images'>
@@ -94,10 +98,10 @@ function Reservations(props) {
             </div>
                        
             
-        </section>
+        </motion.section>
             
         <Footer/>    
-        </div>
+        </motion.div>
     );
 }
 
