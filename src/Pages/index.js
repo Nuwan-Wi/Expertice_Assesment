@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Container from '@mui/material/Container';
 import '../index.css';
 import { blue, grey, deepPurple, yellow } from '@mui/material/colors';
@@ -18,6 +18,8 @@ import { fadeIn, slideIn, staggerContainer } from "../Components/Motion/motion"
 
 
 function Home(props) {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <motion.div
         variants={staggerContainer}
@@ -161,9 +163,10 @@ function Home(props) {
         <p>There are plenty of destinations</p>
 
         <div style={{display:"flex", flexDirection:'row', justifyContent:'space-between' }}>
-        <div className='main_page_card'>
-        <img src={Sigiriya} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
-        <h3>Sigiriya, Dambulla</h3>
+        <motion.div  layout onClick={() => setIsOpen(!isOpen)} className='main_page_card_mini'>
+        <motion.h3 layout="position">Lion Rock <br/> Dambulla, Sri Lanka</motion.h3>
+        {isOpen && (
+        <motion.div >
         <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
         <div>
         <p>Featured</p>
@@ -175,11 +178,15 @@ function Home(props) {
         <p style={{fontSize:'12px',}}>Location</p>
         </div>
         </div>
-        </div>
+        <img src={Sigiriya} style={{width:'200px', paddingBottom:'2px'}}/>
+        </motion.div>
+        )}
+        </motion.div>
         
-        <div className='main_page_card'>
-        <img src={Sigiriya} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
-        <h3>Sigiriya, Dambulla</h3>
+        <motion.div  layout onClick={() => setIsOpen(!isOpen)} className='main_page_card_mini'>
+        <motion.h3 layout="position">Lion Rock <br/> Dambulla, Sri Lanka</motion.h3>
+        {isOpen && (
+        <motion.div >
         <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
         <div>
         <p>Featured</p>
@@ -191,11 +198,15 @@ function Home(props) {
         <p style={{fontSize:'12px',}}>Location</p>
         </div>
         </div>
-        </div>
+        <img src={Sigiriya} style={{width:'200px', paddingBottom:'2px'}}/>
+        </motion.div>
+        )}
+        </motion.div>
 
-        <div className='main_page_card'>
-        <img src={Sigiriya} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
-        <h3>Sigiriya, Dambulla</h3>
+        <motion.div  layout onClick={() => setIsOpen(!isOpen)} className='main_page_card_mini'>
+        <motion.h3 layout="position">Lion Rock <br/> Dambulla, Sri Lanka</motion.h3>
+        {isOpen && (
+        <motion.div >
         <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
         <div>
         <p>Featured</p>
@@ -207,11 +218,15 @@ function Home(props) {
         <p style={{fontSize:'12px',}}>Location</p>
         </div>
         </div>
-        </div>
+        <img src={Sigiriya} style={{width:'200px', paddingBottom:'2px'}}/>
+        </motion.div>
+        )}
+        </motion.div>
 
-        <div className='main_page_card'>
-        <img src={Sigiriya} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
-        <h3>Sigiriya, Dambulla</h3>
+        <motion.div  layout onClick={() => setIsOpen(!isOpen)} className='main_page_card_mini'>
+        <motion.h3 layout="position">Lion Rock <br/> Dambulla, Sri Lanka</motion.h3>
+        {isOpen && (
+        <motion.div >
         <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
         <div>
         <p>Featured</p>
@@ -223,7 +238,10 @@ function Home(props) {
         <p style={{fontSize:'12px',}}>Location</p>
         </div>
         </div>
-        </div>
+        <img src={Sigiriya} style={{width:'200px', paddingBottom:'2px'}}/>
+        </motion.div>
+        )}
+        </motion.div>
         
         </div> 
 
