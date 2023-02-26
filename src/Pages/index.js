@@ -18,7 +18,15 @@ import { fadeIn, slideIn, staggerContainer } from "../Components/Motion/motion"
 
 
 function Home(props) {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(null);
+
+    const i = 0;
+    const toggle = (i) =>{
+        if (isOpen== i){
+            return setIsOpen(null)
+        }
+        setIsOpen(i)
+    }
 
     return (
         <motion.div
@@ -163,9 +171,9 @@ function Home(props) {
         <p>There are plenty of destinations</p>
 
         <div style={{display:"flex", flexDirection:'row', justifyContent:'space-between' }}>
-        <motion.div  layout onClick={() => setIsOpen(!isOpen)} className='main_page_card_mini'>
+        <motion.div  layout onClick={() => toggle(1)} className='main_page_card_mini'>
         <motion.h3 layout="position">Lion Rock <br/> Dambulla, Sri Lanka</motion.h3>
-        {isOpen && (
+        {isOpen ==1  && (
         <motion.div >
         <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
         <div>
@@ -183,9 +191,9 @@ function Home(props) {
         )}
         </motion.div>
         
-        <motion.div  layout onClick={() => setIsOpen(!isOpen)} className='main_page_card_mini'>
+        <motion.div  layout onClick={() => toggle(2)} className='main_page_card_mini'>
         <motion.h3 layout="position">Lion Rock <br/> Dambulla, Sri Lanka</motion.h3>
-        {isOpen && (
+        {isOpen==2 && (
         <motion.div >
         <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
         <div>
@@ -203,9 +211,9 @@ function Home(props) {
         )}
         </motion.div>
 
-        <motion.div  layout onClick={() => setIsOpen(!isOpen)} className='main_page_card_mini'>
+        <motion.div  layout onClick={() => toggle(3)} className='main_page_card_mini'>
         <motion.h3 layout="position">Lion Rock <br/> Dambulla, Sri Lanka</motion.h3>
-        {isOpen && (
+        {isOpen==3 && (
         <motion.div >
         <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
         <div>
@@ -223,9 +231,9 @@ function Home(props) {
         )}
         </motion.div>
 
-        <motion.div  layout onClick={() => setIsOpen(!isOpen)} className='main_page_card_mini'>
+        <motion.div  layout onClick={() => toggle(4)} className='main_page_card_mini'>
         <motion.h3 layout="position">Lion Rock <br/> Dambulla, Sri Lanka</motion.h3>
-        {isOpen && (
+        {isOpen==4 && (
         <motion.div >
         <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
         <div>
