@@ -14,7 +14,8 @@ import Sigiriya from "../images/sigiriya.jpg";
 import StarRatingComponent from 'react-star-rating-component';
 import { MdLocationPin } from "react-icons/md";
 import { motion } from "framer-motion";
-import { fadeIn, slideIn, staggerContainer } from "../Components/Motion/motion"
+import { fadeIn, slideIn, staggerContainer } from "../Components/Motion/motion";
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 
 
 function Home(props) {
@@ -51,14 +52,12 @@ function Home(props) {
             minWidth: '90vw',
             }}>
             <div style={{marginTop:'30vh'}}></div>
-            <motion.div variants={fadeIn("down", "tween", 0.5, 1.5)}>
             <h1>Travel Through the World</h1>
             <label>Select your best destination and best reservations.</label>
-            </motion.div>
-            <motion.a className='bttn' variants={fadeIn("left", "tween", 0.5, 1.5)} >Let's Begin the Journey</motion.a>
-            <motion.div className='imageSlider' style={{width:'650px',marginTop:'50px'}} variants={fadeIn("up", "tween", 0.5, 1.3)}>
+            <a className='bttn'>Let's Begin the Journey</a>
+            <div className='imageSlider' style={{width:'650px',marginTop:'50px'}}>
             <SwipeToSlide/>
-            </motion.div>
+            </div>
                                   
         </Container>          
         </div>
@@ -67,32 +66,12 @@ function Home(props) {
         <div className='index-body'>
         <h1>WE ARE OFFERING THE HOTTEST OFFERS</h1>
         <p>looking for place to stay at the night.</p>
-        <p> Here is the solution</p>
+        <p>Here is the solution</p>
 
         
         <div style={{display:"flex", flexDirection:'row', justifyContent:'space-between' }}>
 
-        <motion.div className="box"  whileHover={{ scale: [null, 1.1, 1.1] }}  transition={{ duration: 0.3 }}>
-        <div className='main_page_card'>
-        <img src={hotel1im1} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
-        <h3>Hotel Kandalama</h3>
-        <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
-        <div>
-        <p>Featured</p>
-        <StarRatingComponent
-        name="rate1"
-        starCount={5}
-        value={4}
-        />
-        </div>
-        <div style={{width:'2px',backgroundColor:'#039d24',marginRight:'-120px'}}/>
-        <div>
-        <h2 style={{color:"#039d24",marginTop:'-1px'}}>3500Rs</h2>
-        <p style={{fontSize:'12px',}}>Cost per day</p>
-        </div>
-        </div>
-        </div>
-        </motion.div>
+        
         
         
         <motion.div className="box"  whileHover={{ scale: [null, 1.1, 1.1] }}  transition={{ duration: 0.3 }}>
@@ -138,6 +117,29 @@ function Home(props) {
         </div>
         </div>
         </motion.div>
+
+        <motion.div className="box"  whileHover={{ scale: [null, 1.1, 1.1] }}  transition={{ duration: 0.3 }}>
+        <div className='main_page_card'>
+        <img src={hotel1im1} style={{width:'300px', height:'250px', borderRadius:'20px 20px 0px 0px'}}/>
+        <h3>Hotel Kandalama</h3>
+        <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
+        <div>
+        <p>Featured</p>
+        <StarRatingComponent
+        name="rate1"
+        starCount={5}
+        value={4}
+        />
+        </div>
+        <div style={{width:'2px',backgroundColor:'#039d24',marginRight:'-120px'}}/>
+        <div>
+        <h2 style={{color:"#039d24",marginTop:'-1px'}}>3500Rs</h2>
+        <p style={{fontSize:'12px',}}>Cost per day</p>
+        </div>
+        </div>
+        </div>
+        </motion.div>
+        
 
         <motion.div className="box"  whileHover={{ scale: [null, 1.1, 1.1] }}  transition={{ duration: 0.3 }}>
         <div className='main_page_card'>
@@ -170,94 +172,123 @@ function Home(props) {
         <p>looking for place to visit.</p>
         <p>There are plenty of destinations</p>
 
-        <div style={{display:"flex", flexDirection:'row', justifyContent:'space-between' }}>
-        <motion.div  layout onClick={() => toggle(1)} className='main_page_card_mini'>
-        <motion.h3 layout="position">Lion Rock <br/> Dambulla, Sri Lanka</motion.h3>
-        {isOpen ==1  && (
-        <motion.div >
-        <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
-        <div>
-        <p>Featured</p>
-        <p style={{fontSize:"14px"}}>Rock climbing, Nature</p>
-        </div>
-        <div style={{width:'2px',backgroundColor:'#039d24',marginRight:'-80px'}}/>
-        <div>
-        <a className='navigate' href='https://geohack.toolforge.org/geohack.php?pagename=Sigiriya&params=07_57_25_N_80_45_35_E_type:landmark'><MdLocationPin className='navigate-icon' style={{width:'40px',height:'30px'}}/></a>
-        <p style={{fontSize:'12px',}}>Location</p>
-        </div>
-        </div>
-        <img src={Sigiriya} style={{width:'200px', paddingBottom:'2px'}}/>
-        </motion.div>
-        )}
-        </motion.div>
-        
-        <motion.div  layout onClick={() => toggle(2)} className='main_page_card_mini'>
-        <motion.h3 layout="position">Lion Rock <br/> Dambulla, Sri Lanka</motion.h3>
-        {isOpen==2 && (
-        <motion.div >
-        <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
-        <div>
-        <p>Featured</p>
-        <p style={{fontSize:"14px"}}>Rock climbing, Nature</p>
-        </div>
-        <div style={{width:'2px',backgroundColor:'#039d24',marginRight:'-80px'}}/>
-        <div>
-        <a className='navigate' href='https://geohack.toolforge.org/geohack.php?pagename=Sigiriya&params=07_57_25_N_80_45_35_E_type:landmark'><MdLocationPin className='navigate-icon' style={{width:'40px',height:'30px'}}/></a>
-        <p style={{fontSize:'12px',}}>Location</p>
-        </div>
-        </div>
-        <img src={Sigiriya} style={{width:'200px', paddingBottom:'2px'}}/>
-        </motion.div>
-        )}
-        </motion.div>
 
-        <motion.div  layout onClick={() => toggle(3)} className='main_page_card_mini'>
-        <motion.h3 layout="position">Lion Rock <br/> Dambulla, Sri Lanka</motion.h3>
-        {isOpen==3 && (
-        <motion.div >
-        <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
-        <div>
-        <p>Featured</p>
-        <p style={{fontSize:"14px"}}>Rock climbing, Nature</p>
-        </div>
-        <div style={{width:'2px',backgroundColor:'#039d24',marginRight:'-80px'}}/>
-        <div>
-        <a className='navigate' href='https://geohack.toolforge.org/geohack.php?pagename=Sigiriya&params=07_57_25_N_80_45_35_E_type:landmark'><MdLocationPin className='navigate-icon' style={{width:'40px',height:'30px'}}/></a>
-        <p style={{fontSize:'12px',}}>Location</p>
-        </div>
-        </div>
-        <img src={Sigiriya} style={{width:'200px', paddingBottom:'2px'}}/>
-        </motion.div>
-        )}
-        </motion.div>
+                <VerticalTimeline lineColor='rgb(40, 255, 32)'>
+                    <VerticalTimelineElement
+                    contentStyle={{ background: 'rgb(40, 255, 32, 0.1)', borderRadius:'15px',  }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgb(40, 255, 32,0.1)' }}
+                    iconStyle={{ background: 'rgb(40, 255, 32)', color: '#fff' }}
+                    icon={<MdLocationPin/>}
+                    >
+                    <motion.div  layout onClick={() => toggle(1)} className='main_page_card_mini'>
+                    <motion.h3 layout="position">Lion Rock <br/> Dambulla, Sri Lanka</motion.h3>
+                    {isOpen ==1  && (
+                        <motion.div >
+                        <div style={{display:'flex', justifyContent:'space-between', padding:'2px 5px'}}>
+                        <div>
+                        <p style={{fontSize:"16px"}}>Featured <br/>Rock climbing, Nature</p>
+                        </div>
+                        
+                        <div>
+                        <a className='navigate' href='https://geohack.toolforge.org/geohack.php?pagename=Sigiriya&params=07_57_25_N_80_45_35_E_type:landmark'><MdLocationPin className='navigate-icon' style={{width:'40px',height:'30px'}}/><br/>Location</a>
+                        </div>
+                        </div>
+                        <img src={Sigiriya} style={{width:'200px', paddingBottom:'2px'}}/>
+                        </motion.div>
+                        )}
+                    </motion.div>
 
-        <motion.div  layout onClick={() => toggle(4)} className='main_page_card_mini'>
-        <motion.h3 layout="position">Lion Rock <br/> Dambulla, Sri Lanka</motion.h3>
-        {isOpen==4 && (
-        <motion.div >
-        <div style={{display:'flex', justifyContent:'space-between', padding:'5px'}}>
-        <div>
-        <p>Featured</p>
-        <p style={{fontSize:"14px"}}>Rock climbing, Nature</p>
-        </div>
-        <div style={{width:'2px',backgroundColor:'#039d24',marginRight:'-80px'}}/>
-        <div>
-        <a className='navigate' href='https://geohack.toolforge.org/geohack.php?pagename=Sigiriya&params=07_57_25_N_80_45_35_E_type:landmark'><MdLocationPin className='navigate-icon' style={{width:'40px',height:'30px'}}/></a>
-        <p style={{fontSize:'12px',}}>Location</p>
-        </div>
-        </div>
-        <img src={Sigiriya} style={{width:'200px', paddingBottom:'2px'}}/>
-        </motion.div>
-        )}
-        </motion.div>
+                    </VerticalTimelineElement>
+
+                    <VerticalTimelineElement
+                    contentStyle={{ background: 'rgb(40, 255, 32, 0.1)', borderRadius:'15px',  }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgb(40, 255, 32,0.1)' }}
+                    iconStyle={{ background: 'rgb(40, 255, 32)', color: '#fff' }}
+                    icon={<MdLocationPin/>}
+                    >
+                    <motion.div  layout onClick={() => toggle(2)} className='main_page_card_mini'>
+                    <motion.h3 layout="position">Lion Rock <br/> Dambulla, Sri Lanka</motion.h3>
+                    {isOpen ==2  && (
+                        <motion.div >
+                        <div style={{display:'flex', justifyContent:'space-between', padding:'2px 5px'}}>
+                        <div>
+                        <p style={{fontSize:"16px"}}>Featured <br/>Rock climbing, Nature</p>
+                        </div>
+                        
+                        <div>
+                        <a className='navigate' href='https://geohack.toolforge.org/geohack.php?pagename=Sigiriya&params=07_57_25_N_80_45_35_E_type:landmark'><MdLocationPin className='navigate-icon' style={{width:'40px',height:'30px'}}/><br/>Location</a>
+                        </div>
+                        </div>
+                        <img src={Sigiriya} style={{width:'200px', paddingBottom:'2px'}}/>
+                        </motion.div>
+                        )}
+                    </motion.div>
+
+                    </VerticalTimelineElement>
+
+                    <VerticalTimelineElement
+                    contentStyle={{ background: 'rgb(40, 255, 32, 0.1)', borderRadius:'15px',  }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgb(40, 255, 32,0.1)' }}
+                    iconStyle={{ background: 'rgb(40, 255, 32)', color: '#fff' }}
+                    icon={<MdLocationPin/>}
+                    >
+                    <motion.div  layout onClick={() => toggle(3)} className='main_page_card_mini'>
+                    <motion.h3 layout="position">Lion Rock <br/> Dambulla, Sri Lanka</motion.h3>
+                    {isOpen ==3  && (
+                        <motion.div >
+                        <div style={{display:'flex', justifyContent:'space-between', padding:'2px 5px'}}>
+                        <div>
+                        <p style={{fontSize:"16px"}}>Featured <br/>Rock climbing, Nature</p>
+                        </div>
+                        
+                        <div>
+                        <a className='navigate' href='https://geohack.toolforge.org/geohack.php?pagename=Sigiriya&params=07_57_25_N_80_45_35_E_type:landmark'><MdLocationPin className='navigate-icon' style={{width:'40px',height:'30px'}}/><br/>Location</a>
+                        </div>
+                        </div>
+                        <img src={Sigiriya} style={{width:'200px', paddingBottom:'2px'}}/>
+                        </motion.div>
+                        )}
+                    </motion.div>
+
+                    </VerticalTimelineElement>
+
+                    <VerticalTimelineElement
+                    contentStyle={{ background: 'rgb(40, 255, 32, 0.1)', borderRadius:'15px',  }}
+                    contentArrowStyle={{ borderRight: '7px solid  rgb(40, 255, 32,0.1)' }}
+                    iconStyle={{ background: 'rgb(40, 255, 32)', color: '#fff' }}
+                    icon={<MdLocationPin/>}
+                    >
+                    <motion.div  layout onClick={() => toggle(4)} className='main_page_card_mini'>
+                    <motion.h3 layout="position">Lion Rock <br/> Dambulla, Sri Lanka</motion.h3>
+                    {isOpen ==4  && (
+                        <motion.div >
+                        <div style={{display:'flex', justifyContent:'space-between', padding:'2px 5px'}}>
+                        <div>
+                        <p style={{fontSize:"16px"}}>Featured <br/>Rock climbing, Nature</p>
+                        </div>
+                        
+                        <div>
+                        <a className='navigate' href='https://geohack.toolforge.org/geohack.php?pagename=Sigiriya&params=07_57_25_N_80_45_35_E_type:landmark'><MdLocationPin className='navigate-icon' style={{width:'40px',height:'30px'}}/><br/>Location</a>
+                        </div>
+                        </div>
+                        <img src={Sigiriya} style={{width:'200px', paddingBottom:'2px'}}/>
+                        </motion.div>
+                        )}
+                    </motion.div>
+
+                    </VerticalTimelineElement>
+                
+                </VerticalTimeline>
         
-        </div> 
+         
 
         </div>
 
         <div className='index-body' style={{background: `url(${bground})`,
         backgroundAttachment: 'fixed',
-        backgroundSize:'100% 100%'}}>
+        backgroundSize:'100% 100%',
+        height:'80vh',
+        }}>
 
         <div style={{float:'right',width:'400px',}}>
         <h1>Do you want to join with Us</h1>

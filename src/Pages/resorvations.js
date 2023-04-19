@@ -18,6 +18,7 @@ import { fadeIn, slideIn, staggerContainer } from "../Components/Motion/motion";
 import Slider from "react-slick";
 
 
+
 function ReadMore({children, maxCharacterCount = 200}){
     const text = children;
 
