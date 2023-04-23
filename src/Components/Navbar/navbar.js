@@ -44,7 +44,7 @@ function Navbar() {
       <CustomLink href="/" >Home</CustomLink>
       <CustomLink href="/destination" >Destinations</CustomLink>
       <CustomLink href="/reservations" >Reservation</CustomLink>
-      <CustomLink href="#" >Join With Us</CustomLink>
+      <CustomLink href="/join" >Join With Us</CustomLink>
       <CustomLink href="/about">About</CustomLink>
 
         <li className="nav__item">
