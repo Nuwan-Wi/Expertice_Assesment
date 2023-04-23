@@ -1,32 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
+import { Pg1 } from "../Components/Form/pg1.form";
+import { Pg2 } from "../Components/Form/pg2.form";
+import { Pg3 } from "../Components/Form/pg3.form";
 
 function Join() {
+  const  [page, setPage] = useState(1);
+
   return (
     <div>
       <center>
         <h2>Wanna Join</h2>
       </center>
       <div className="container">
-        <form>
-          <div class="mb-3">
-            <label class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" required />
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Profecion</label> <br />
-            <select class="form-select" aria-label="Default select example">
-              <option value="" disabled selected>
-                Your Profetion
-              </option>
-              <option value="">Resturent Awner</option>
-              <option value="">Destination Services Provider</option>
-            </select>
-          </div>
-          <button type="submit" class="btn btn-primary">
-            Submit
-          </button>
-        </form>
+      {
+        page == 1 ? <Pg1/> : page == 2 ? <Pg2/> : <Pg3/>
+      }
+
+      <center>
+      {
+        page > 1 && (
+          <button
+        className="btn btn-primary"
+        onClick={() => {
+          const nextPage = page - 1;
+          setPage(nextPage);
+        }}
+      >
+        Privious
+      </button>
+        )
+      }
+      {
+        page < 3 && (
+          <button
+        className="btn btn-primary"
+        onClick={() => {
+          const nextPage = page + 1;
+          setPage(nextPage);
+        }}
+      >
+        Next
+      </button>
+        )
+      }
+      
+      </center>
       </div>
+      
     </div>
   );
 }
