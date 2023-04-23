@@ -5,7 +5,9 @@ import Home from "./Pages/index"
 import About from './Pages/about'
 import SignIn from './Pages/signin';
 import Destination from './Pages/destination';
-import Reservations from './Pages/resorvations'
+import Reservations from './Pages/resorvations';
+import Join from './Pages/join';
+
 
 
 function App(props) {
@@ -19,6 +21,7 @@ function App(props) {
     <Route path='/sign-in'><SignIn/></Route>
     <Route path='/destination'><Destination/></Route>
     <Route path='/reservations'><Reservations/></Route>
+    <Route path='/join'><Join/></Route>
     </Switch>
     </Router>
     </div>
